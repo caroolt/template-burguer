@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171714" />
+    <meta
+      name="description"
+      content="BRASA. Fogo alto, papo reto. Conheça nossos burgers na brasa, escolha seu favorito e peça direto com a gente."
+    />
+    <meta property="og:title" content="BRASA — Respeita a fome." />
+    <meta
+      property="og:description"
+      content="Burger de verdade. Fogo alto. Papo reto. Explore o cardápio BRASA."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/burger-hero-poster.webp"
+      fetchpriority="high"
+    />
+    <title>BRASA — Respeita a fome.</title>
+    <!-- Show the preloader only when JS will run to dismiss it. -->
+    <script>
+      document.documentElement.classList.add("js", "is-loading");
+    </script>
+  </head>
+  <body>
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader-orange"></div>
+      <div class="preloader-ink">
+        <div class="embers preloader-embers"></div>
+        <div class="preloader-top">
+          <span>BRASA®</span><span>FOGO ALTO. PAPO RETO.</span>
+        </div>
+        <div class="preloader-center">
+          <svg class="preloader-flame" viewBox="0 0 32 40">
+            <path d="M19 0C23 14 7 14 13 25c-8-2-8-9-7-12C-9 31 6 43 19 39c16-5 14-20 7-27 1 8-3 11-5 10C26 13 22 5 19 0Z" />
+          </svg>
+          <div class="preloader-word">
+            <span class="preloader-outline">BRASA</span
+            ><span class="preloader-fill">BRASA</span>
+          </div>
+        </div>
+        <div class="preloader-bottom">
+          <span class="preloader-count">000</span>
+          <span class="preloader-step">ACENDENDO A BRASA</span>
+        </div>
+        <div class="preloader-bar"><span></span></div>
+      </div>
+    </div>
+    <a class="skip-link" href="#cardapio">Pular para o cardápio</a>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="BRASA, início"
+        ><svg class="brand-flame" viewBox="0 0 32 40" aria-hidden="true">
+          <path
+            d="M19 0C23 14 7 14 13 25c-8-2-8-9-7-12C-9 31 6 43 19 39c16-5 14-20 7-27 1 8-3 11-5 10C26 13 22 5 19 0Z"
+            fill="currentColor"
+          /></svg
+        ><span data-brand>BRASA</span><span class="brand-dot">®</span></a
+      >
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#cardapio">O cardápio</a><a href="#manifesto">Nossa brasa</a
+        ><a href="#contato">Onde encontrar</a>
+      </nav>
+      <button class="button button-orange header-order" data-order>
+        Pedir agora
+        <span aria-hidden="true"
+          ><svg
+            class="arrow-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M5 19 19 5M5 5h14v14"
+              stroke="currentColor"
+              stroke-width="1.6"
+            /></svg
+        ></span>
+      </button>
+      <button
+        class="menu-toggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação móvel" inert>
+      <a href="#cardapio">O cardápio <span>01</span></a
+      ><a href="#manifesto">Nossa brasa <span>02</span></a
+      ><a href="#contato">Onde encontrar <span>03</span></a
+      ><button class="button button-orange" data-order>
+        Pedir agora
+        <svg
+          class="arrow-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M5 19 19 5M5 5h14v14"
+            stroke="currentColor"
+            stroke-width="1.6"
+          />
+        </svg>
+      </button>
+      <p>FOGO ALTO. PAPO RETO.</p>
+    </nav>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <section id="inicio" class="hero" aria-labelledby="hero-title">
+            <div class="hero-topline">
+              <span><i class="status-dot"></i> FEITO NO FOGO. SEM ATALHO.</span
+              ><span>BURGER DE RUA / ALMA DE BRASA</span>
+            </div>
+            <div class="hero-main">
+              <div class="hero-copy">
+                <div class="hero-title-wrap">
+                  <h1 id="hero-title">
+                    <span class="hero-line">RESPEITA</span
+                    ><span class="hero-line hero-orange"
+                      >A FOME<span class="period">.</span></span
+                    >
+                  </h1>
+                  <div class="hero-title-outline" aria-hidden="true">
+                    <span class="hero-line">RESPEITA</span
+                    ><span class="hero-line hero-orange"
+                      >A FOME<span class="period">.</span></span
+                    >
+                  </div>
+                </div>
+                <div class="hero-actions">
+                  <p>
+                    Tem fome que não aceita qualquer coisa.<br />É pra essa fome
+                    que a gente acende a brasa.
+                  </p>
+                  <div class="hero-cta-group">
+                    <a class="button button-orange hero-cta" href="#cardapio"
+                      >Encontre seu burger
+                      <span aria-hidden="true"
+                        ><svg
+                          class="arrow-icon"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M5 19 19 5M5 5h14v14"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                          /></svg></span
+                    ></a>
+                    <div class="hero-note">
+                      <span class="little-spark" aria-hidden="true"
+                        ><svg class="spark-icon" viewBox="0 0 32 40" aria-hidden="true"><path d="M19 0C23 14 7 14 13 25c-8-2-8-9-7-12C-9 31 6 43 19 39c16-5 14-20 7-27 1 8-3 11-5 10C26 13 22 5 19 0Z" fill="currentColor" /></svg></span>
+                      Pão macio. Carne no ponto. Zero conversa fiada.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-visual">
+                <video
+                  class="hero-burger"
+                  width="1280"
+                  height="720"
+                  poster="/assets/burger-hero-poster.webp"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  disablepictureinpicture
+                  preload="auto"
+                  aria-label="Double smash BRASA com cheddar derretido, picles e pão de gergelim"
+                >
+                  <source src="/assets/burger-hero.webm" type="video/webm" />
+                  <source src="/assets/burger-hero.mp4" type="video/mp4" />
+                </video>
+<div class="round-stamp" role="img" aria-label="Na brasa, de verdade">
+                  <svg viewBox="0 0 200 200" aria-hidden="true">
+                    <defs>
+                      <path
+                        id="stamp-ring"
+                        d="M100 100m-63 0a63 63 0 1 1 126 0a63 63 0 1 1-126 0"
+                      />
+                    </defs>
+                    <path class="stamp-seal" d="M100.0 0.0L110.3 8.6L122.3 2.5L130.4 13.2L143.4 9.9L148.9 22.1L162.3 21.8L165.1 34.9L178.2 37.7L177.9 51.1L190.1 56.6L186.8 69.6L197.5 77.7L191.4 89.7L200.0 100.0L191.4 110.3L197.5 122.3L186.8 130.4L190.1 143.4L177.9 148.9L178.2 162.3L165.1 165.1L162.3 178.2L148.9 177.9L143.4 190.1L130.4 186.8L122.3 197.5L110.3 191.4L100.0 200.0L89.7 191.4L77.7 197.5L69.6 186.8L56.6 190.1L51.1 177.9L37.7 178.2L34.9 165.1L21.8 162.3L22.1 148.9L9.9 143.4L13.2 130.4L2.5 122.3L8.6 110.3L0.0 100.0L8.6 89.7L2.5 77.7L13.2 69.6L9.9 56.6L22.1 51.1L21.8 37.7L34.9 34.9L37.7 21.8L51.1 22.1L56.6 9.9L69.6 13.2L77.7 2.5L89.7 8.6Z" />
+                    <circle class="stamp-line" cx="100" cy="100" r="84" />
+                    <g class="stamp-spin">
+                      <text class="stamp-text">
+                        <textPath href="#stamp-ring" textLength="392">
+                          NA BRASA ✦ DE VERDADE ✦ FOGO ALTO ✦
+                        </textPath>
+                      </text>
+                    </g>
+                    <circle class="stamp-core" cx="100" cy="100" r="42" />
+                    <path
+                      class="stamp-flame"
+                      transform="translate(84 80)"
+                      d="M19 0C23 14 7 14 13 25c-8-2-8-9-7-12C-9 31 6 43 19 39c16-5 14-20 7-27 1 8-3 11-5 10C26 13 22 5 19 0Z"
+                    />
+                  </svg>
+                </div>
+                <div class="hero-caption">
+                  <span>01 / O ORIGINAL</span
+                  ><span>DOIS SMASH. UM RESPEITO.</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-bottom">
+              <span>ARTESANAL NA ESSÊNCIA. BRUTO NO SABOR.</span
+              ><a href="#cardapio" aria-label="Descer para o cardápio"
+                >ROLE. A FOME SÓ AUMENTA. <span aria-hidden="true">↓</span></a
+              >
+            </div>
+          </section>
+          <div class="ticker">
+            <span class="sr-only"
+              >Fogo alto. Papo reto. Burger de verdade.</span
+            >
+            <div class="ticker-track" aria-hidden="true">
+              <div class="ticker-group">
+              <span>FOGO ALTO</span>
+              <b
+                ><svg class="spark-icon" viewBox="0 0 32 40" aria-hidden="true"><path d="M19 0C23 14 7 14 13 25c-8-2-8-9-7-12C-9 31 6 43 19 39c16-5 14-20 7-27 1 8-3 11-5 10C26 13 22 5 19 0Z" fill="currentColor" /></svg></b>
+              <span>PAPO RETO</span>
+              <b
+                ><svg class="spark-icon" viewBox="0 0 32 40" aria-hidden="true"><path d="M19 0C23 14 7 14 13 25c-8-2-8-9-7-12C-9 31 6 43 19 39c16-5 14-20 7-27 1 8-3 11-5 10C26 13 22 5 19 0Z" fill="currentColor" /></svg></b>
+              <span>BURGER DE VERDADE</span>
+              <b
+                ><svg class="spark-icon" viewBox="0 0 32 40" aria-hidden="true"><path d="M19 0C23 14 7 14 13 25c-8-2-8-9-7-12C-9 31 6 43 19 39c16-5 14-20 7-27 1 8-3 11-5 10C26 13 22 5 19 0Z" fill="currentColor" /></svg></b>
+              </div>
+            </div>
+          </div>
+          <section
+            id="da-casa"
+            class="stack-section"
+            aria-labelledby="stack-title"
+          >
+            <div class="stack-bgs" aria-hidden="true"></div>
+            <div class="stack-pin">
+              <div class="stack-head">
+                <div class="section-eyebrow">
+                  <span>MAIS VENDIDOS</span
+                  ><span>UM DE CADA VEZ. SEM PRESSA.</span>
+                </div>
+                <div class="stack-title-row">
+                  <h2 id="stack-title">
+                    ROLA QUE<br /><span>VEM MAIS.</span>
+                  </h2>
+                  <div class="stack-counter" aria-hidden="true">
+                    <span class="stack-counter-window"
+                      ><span class="stack-counter-reel"></span></span
+                    ><span class="stack-counter-total"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-stage">
+                <ol class="stack-list" id="stack-list"></ol>
+                <div class="stack-progress" aria-hidden="true">
+                  <span class="stack-progress-fill"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            id="cardapio"
+            class="menu-section section-pad"
+            aria-labelledby="menu-title"
+          >
+            <div class="section-eyebrow">
+              <span>01 — O CARDÁPIO</span
+              ><span>ESCOLHER É A PARTE DIFÍCIL.</span>
+            </div>
+            <div class="section-heading">
+              <h2 id="menu-title">
+                BATEU A FOME?<br /><span>A GENTE RESOLVE.</span>
+              </h2>
+              <p>
+                Ingredientes de verdade, combinações sem juízo.<br />Escolha o
+                seu. O resto é com a brasa.
+              </p>
+            </div>
+            <div class="menu-tools">
+              <div
+                class="category-list"
+                role="group"
+                aria-label="Filtrar cardápio"
+              >
+                <button
+                  class="category active"
+                  data-category="all"
+                  aria-pressed="true"
+                >
+                  Todos <span>06</span></button
+                ><button
+                  class="category"
+                  data-category="burgers"
+                  aria-pressed="false"
+                >
+                  Burgers <span>03</span></button
+                ><button
+                  class="category"
+                  data-category="veggie"
+                  aria-pressed="false"
+                >
+                  Sem carne <span>01</span></button
+                ><button
+                  class="category"
+                  data-category="sides"
+                  aria-pressed="false"
+                >
+                  Pra acompanhar <span>01</span></button
+                ><button
+                  class="category"
+                  data-category="drinks"
+                  aria-pressed="false"
+                >
+                  Geladas <span>01</span>
+                </button>
+              </div>
+              <span class="menu-count" aria-live="polite" aria-atomic="true"
+                >6 bons motivos.</span
+              >
+            </div>
+            <div class="product-grid" id="product-grid"></div>
+            <noscript
+              ><p>
+                Ative o JavaScript para explorar os detalhes do cardápio. O
+                Original — R$ 32; Brutal Bacon — R$ 39; Crocante, pô. — R$ 34;
+                Verde de fome — R$ 35; Batata sem juízo — R$ 24; Um gole de
+                calma — R$ 9.
+              </p></noscript
+            >
+            <div class="menu-footnote">
+              <span>FEITO NA HORA. DO JEITO CERTO.</span>
+              <p>
+                Marca e cardápio fictícios. Imagens ilustrativas. Consulte
+                ingredientes e alergênicos nos detalhes.
+              </p>
+            </div>
+          </section>
+          <section class="combo-section" aria-labelledby="combo-title">
+            <div class="combo-head">
+              <div>
+                <span class="eyebrow">SOZINHO É BOM. JUNTO É COVARDIA.</span>
+                <h2 id="combo-title">O BONDE<br />COMPLETO.</h2>
+              </div>
+              <p class="combo-description"></p>
+            </div>
+            <div class="combo-equation">
+              <figure class="combo-item">
+                <div class="combo-plate">
+                  <img src="/assets/burger-classic-cut.webp" width="431" height="343" loading="lazy" alt="O Original, burger com cheddar e picles" />
+                </div>
+                <figcaption><b>01</b>O Original</figcaption>
+              </figure>
+              <span class="combo-op" aria-hidden="true">+</span>
+              <figure class="combo-item">
+                <div class="combo-plate">
+                  <img src="/assets/fries-cut.webp" width="614" height="468" loading="lazy" alt="Porção individual de batata frita" />
+                </div>
+                <figcaption><b>02</b>Batata 150g</figcaption>
+              </figure>
+              <span class="combo-op" aria-hidden="true">+</span>
+              <figure class="combo-item">
+                <div class="combo-plate">
+                  <img src="/assets/soda-cut.webp" width="741" height="837" loading="lazy" alt="Lata de refrigerante BRASA de 350ml" />
+                </div>
+                <figcaption><b>03</b>Refri 350ml</figcaption>
+              </figure>
+              <span class="combo-op" aria-hidden="true">=</span>
+              <div class="combo-deal">
+                <div class="combo-sticker">
+                  <span>O COMBO<br />TODO POR</span>
+                  <strong class="combo-price"></strong>
+                </div>
+                <button class="button button-dark" data-product="combo">
+                  Esse é o meu combo
+                  <span aria-hidden="true"
+                  ><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6" /></svg
+                ></span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section
+            id="manifesto"
+            class="manifesto section-pad"
+            aria-labelledby="manifesto-title"
+          >
+            <div class="section-eyebrow">
+              <span>02 — NOSSA BRASA</span><span>O SABOR TEM ORIGEM.</span>
+            </div>
+            <h2 id="manifesto-title" class="manifesto-statement">
+              Não é só sobre hambúrguer. É sobre fazer
+              <em>direito.</em> Pão que abraça, carne que encontra o fogo e
+              um molho que você vai passar a vida tentando descobrir.
+            </h2>
+            <div class="manifesto-stage">
+              <span class="stage-word" aria-hidden="true">SEM ATALHO.</span>
+              <img
+                class="stage-burger"
+                src="/assets/burger-bacon-cut.webp"
+                width="490"
+                height="392"
+                loading="lazy"
+                alt="Brutal Bacon, burger com bacon crocante, cebola caramelizada e cheddar"
+              />
+            </div>
+            <div class="manifesto-copy">
+              <p class="manifesto-lead">
+                A gente acredita no simples bem-feito. No pão selado na
+                manteiga, na carne que encontra o fogo alto, no cheddar que
+                derrete do jeito certo.
+              </p>
+              <p>
+                A BRASA nasceu dessa vontade: servir um burger honesto, com
+                personalidade e sem economizar no sabor. Sem pressa na chapa,
+                sem atalho na receita.
+              </p>
+            </div>
+            <ol class="manifesto-pillars">
+              <li>
+                <span class="pillar-number" aria-hidden="true">01</span>
+                <h3>Ingrediente de verdade</h3>
+                <p>Pão brioche, blend na brasa e molho feito aqui. Se não é bom, não entra.</p>
+              </li>
+              <li>
+                <span class="pillar-number" aria-hidden="true">02</span>
+                <h3>Feito na hora, sempre</h3>
+                <p>Seu burger só vai pra chapa quando você pede. Nada esperando no balcão.</p>
+              </li>
+              <li>
+                <span class="pillar-number" aria-hidden="true">03</span>
+                <h3>Direto com a gente</h3>
+                <p>Pediu, falou com quem faz. Sem enrolação no meio do caminho.</p>
+              </li>
+            </ol>
+          </section>
+          <section
+            id="contato"
+            class="contact section-pad"
+            aria-labelledby="contact-title"
+          >
+            <div class="contact-top">
+              <span class="eyebrow">03 — DO SEU JEITO</span
+              ><span class="contact-spark" aria-hidden="true"
+                ><svg class="spark-icon" viewBox="0 0 32 40" aria-hidden="true"><path d="M19 0C23 14 7 14 13 25c-8-2-8-9-7-12C-9 31 6 43 19 39c16-5 14-20 7-27 1 8-3 11-5 10C26 13 22 5 19 0Z" fill="currentColor" /></svg></span>
+            </div>
+            <div class="contact-heading">
+              <h2 id="contact-title">
+                SUA PRÓXIMA<br /><span>BOA MORDIDA.</span>
+              </h2>
+              <p>
+                Na sua casa, no seu sofá, com a sua galera.<br />Escolha como
+                pedir. A brasa a gente acende.
+              </p>
+            </div>
+            <div class="contact-channels">
+              <button data-channel="whatsapp">
+                <span class="channel-number">01</span
+                ><span
+                  ><strong>CHAMA NO ZAP.</strong
+                  ><small>Peça direto, do seu jeito.</small></span
+                ><span class="channel-arrow" aria-hidden="true"
+                  ><svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 19 19 5M5 5h14v14"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    /></svg
+                ></span></button
+              ><button data-channel="delivery">
+                <span class="channel-number">02</span
+                ><span
+                  ><strong>MANDA CHEGAR.</strong
+                  ><small>Seu burger a caminho de casa.</small></span
+                ><span class="channel-arrow" aria-hidden="true"
+                  ><svg
+                    class="arrow-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 19 19 5M5 5h14v14"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    /></svg
+                ></span>
+              </button>
+            </div>
+            <div class="contact-info">
+              <span><b>A NOSSA ESQUINA</b><span data-address></span></span
+              ><span><b>HORA DE MATAR A FOME</b><span data-hours></span></span
+              ><span class="demo-label"
+                >MARCA FICTÍCIA / PROJETO DEMONSTRATIVO</span
+              >
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="embers footer-embers" aria-hidden="true"></div>
+          <div class="footer-top">
+            <div class="footer-cta">
+              <span class="eyebrow">AINDA COM FOME?</span>
+              <p class="footer-title">A BRASA<br /><span>TÁ ACESA.</span></p>
+              <button class="button button-orange" data-order>
+                Pedir agora
+                <span aria-hidden="true"
+                  ><svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6" /></svg
+                ></span>
+              </button>
+            </div>
+            <nav class="footer-col" aria-label="Rodapé">
+              <b>NAVEGUE</b><a href="#da-casa">Mais vendidos</a
+              ><a href="#cardapio">O cardápio</a
+              ><a href="#manifesto">Nossa brasa</a
+              ><a href="#contato">Onde encontrar</a>
+            </nav>
+            <div class="footer-col">
+              <b>HORÁRIO</b><span data-hours></span>
+            </div>
+            <div class="footer-col">
+              <b>ENDEREÇO</b><span data-address></span>
+            </div>
+          </div>
+          <a
+            class="footer-wordmark"
+            href="#inicio"
+            aria-label="BRASA, voltar ao início"
+            ><span class="footer-word-outline" aria-hidden="true">BRASA</span
+            ><span class="footer-word-fill" aria-hidden="true">BRASA</span></a
+          >
+          <div class="footer-bottom">
+            <span>© <span id="year"></span> BRASA. FOGO ALTO. PAPO RETO.</span
+            ><span>FEITO COM FOME E PERSONALIDADE.</span
+            ><a href="#inicio"
+              >LÁ PRA CIMA
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6" /></svg
+            ></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <dialog
+      class="product-dialog"
+      id="product-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <button class="dialog-close" aria-label="Fechar detalhes">✕</button>
+      <div class="dialog-layout">
+        <div class="dialog-image">
+          <img
+            id="dialog-img"
+            src="/assets/burger-classic.webp"
+            width="780"
+            height="520"
+            alt=""
+          />
+        </div>
+        <div class="dialog-copy">
+          <span class="eyebrow">FEITO NA BRASA. FEITO PRA VOCÊ.</span>
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-description"></p>
+          <div class="ingredients" id="dialog-ingredients"></div>
+          <p id="dialog-allergens" class="allergens"></p>
+          <label class="note-label" for="order-note"
+            >Algum recado pra cozinha? <span>Opcional</span></label
+          ><textarea
+            id="order-note"
+            maxlength="300"
+            rows="2"
+            placeholder="Ex.: sem picles, por favor."
+          ></textarea>
+          <div class="quantity-row">
+            <span>Quantidade</span>
+            <div class="quantity-control">
+              <button id="quantity-minus" aria-label="Diminuir quantidade">
+                −</button
+              ><output id="quantity" aria-live="polite">1</output
+              ><button id="quantity-plus" aria-label="Aumentar quantidade">
+                +
+              </button>
+            </div>
+            <strong id="dialog-price"></strong>
+          </div>
+          <button id="product-order" class="button button-orange">
+            Pedir pelo WhatsApp
+            <span aria-hidden="true"
+              ><svg
+                class="arrow-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 19 19 5M5 5h14v14"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                /></svg
+            ></span>
+          </button>
+          <p class="order-hint">
+            Disponibilidade, entrega e valor final confirmados no atendimento.
+          </p>
+        </div>
+      </div>
+    </dialog>
+    <dialog
+      class="channels-dialog"
+      id="channels-dialog"
+      aria-labelledby="channels-title"
+    >
+      <button class="dialog-close" aria-label="Fechar opções de pedido">
+        ✕</button
+      ><span class="eyebrow">DIRETO COM A GENTE</span>
+      <h2 id="channels-title">BORA MATAR<br />ESSA FOME?</h2>
+      <p id="channels-description">Escolha por onde pedir.</p>
+      <div id="channel-actions"></div>
+      <p class="demo-disclosure">
+        BRASA é uma marca fictícia. Nenhum pedido ou pagamento é realizado nesta
+        demonstração.
+      </p>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
